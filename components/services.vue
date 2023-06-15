@@ -1,0 +1,67 @@
+<template>
+  <div class="bg-newConstruction bg-center bg-fixed h-screen -max overflow-hidden flex justify-center items-center flex flex-col">
+    <div
+      class="flex-col flex justify-center align-center w-3/5"
+    >
+      <h3
+        class="relative text-white text-6xl text-center ml-14 mb-10 font-bold"
+      >
+      <span class="text-[#e42b00]">Our&nbsp;</span> Services
+      </h3>
+      <p
+        class="relative text-white text-4xl text-center text-justify ml-14 mb-10"
+      >
+        We provide services and products that set hight standards for quality,
+        reliability, durability and value for money
+      </p>
+    </div>
+    <div class="flex flex-row align-center justify-center ">
+      <div class="relative service-one flex flex-col w-1/5 bg-white pb-4">
+        <img src="../assets/images/home-1.jpg" alt="">
+        <h3 class="text-2xl font-bold text-center">Multi Family Residential Building</h3>
+      </div>
+      <div class="relative service-two flex flex-col w-1/5 mx-8 bg-white">
+        <img src="../assets/images/home-1.jpg" alt="">
+        <h3 class="mt-4 text-2xl font-bold text-center">Single Family Residential</h3>
+      </div>
+      <div class="relative service-three flex flex-col w-1/5 bg-white pb-4">
+        <img src="../assets/images/garage_3.jpg" alt="">
+        <h3 class="mt-4 text-2xl font-bold text-center justify-center">Accessory Building</h3>
+      </div>
+    </div>
+  </div>
+</template>
+
+<style>
+.bg-newConstruction {
+  margin-top: 0;
+  padding-right: 0rem !important;
+  /* padding: 260px 0 100px 0 !important; */
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgb(255, 255, 255);
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(0, 0, 0, 0.6727065826330532) 100%
+  );
+  overflow-x: hidden;
+}
+.bg-newConstruction::before {
+  content: "";
+  background-image: url("../assets/images/framing-of-a-new-house.jpg");
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 60%;
+}
+</style>
