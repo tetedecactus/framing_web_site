@@ -20,7 +20,7 @@
         </p>
         <button
           to="/contact"
-          class="w-1/3 btn text-white border-2 border-black text-lg py-4 ml-14 rounded-none bg-[#e42b00] hover:text-black"
+          class="w-1/3 btn text-white border-2 border-black text-lg py-4 ml-14 rounded-none bg-[#e42b00] hover:text-black ease-in duration-200"
         >
           Learn More
         </button>

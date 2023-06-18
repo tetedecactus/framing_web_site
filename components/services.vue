@@ -1,12 +1,12 @@
 <template>
-  <div class="bg-newConstruction mb-20 border-4 border-black bg-center bg-fixed h-screen -max overflow-hidden justify-center items-center flex flex-col">
-    <div
-      class="flex-col flex justify-center align-center w-3/5"
-    >
+  <div
+    class="bg-newConstruction mb-20 border-4 border-black bg-center bg-fixed h-screen -max overflow-hidden justify-center items-center flex flex-col"
+  >
+    <div class="flex-col flex justify-center align-center w-3/5">
       <h3
         class="mt-10 relative text-white text-6xl text-center ml-14 mb-10 font-bold"
       >
-      <span class="text-[#e42b00]">Our&nbsp;</span> Services
+        <span class="text-[#e42b00]">Our&nbsp;</span> Services
       </h3>
       <p
         class="relative text-white text-4xl text-center text-justify ml-14 mb-10"
@@ -16,17 +16,29 @@
       </p>
     </div>
     <div class="flex flex-row align-center justify-center mb-20">
-      <div class=" border-2 border-black relative service-one flex flex-col w-1/5 bg-white pb-4">
-        <img src="../assets/images/home-1.jpg" alt="">
-        <h3 class="text-2xl font-bold text-center">Multi Family Residential Building</h3>
+      <div
+        class="border-2 border-black relative service-one flex flex-col w-2/6 bg-white pb-4"
+      >
+        <img class="h-96" src="../assets/images/block.jpg" alt="" />
+        <h3 class="text-2xl font-bold text-center h-10">
+          Multi Family Residential Building
+        </h3>
       </div>
-      <div class="border-2 border-black relative service-two flex flex-col w-1/5 mx-8 bg-white">
-        <img src="../assets/images/home-1.jpg" alt="">
-        <h3 class="mt-4 text-2xl font-bold text-center">Single Family Residential</h3>
+      <div
+        class="border-2 border-black relative service-two flex flex-col w-2/6 mx-8 bg-white"
+      >
+        <img class="h-96" src="../assets/images/home-half-done.jpg" alt="" />
+        <h3 class="mt-4 text-2xl font-bold text-center h-10">
+          Single Family Residential
+        </h3>
       </div>
-      <div class="border-2 border-black relative service-three flex flex-col w-1/5 bg-white pb-4">
-        <img src="../assets/images/garage_3.jpg" alt="">
-        <h3 class="mt-4 text-2xl font-bold text-center justify-center">Accessory Building</h3>
+      <div
+        class="border-2 border-black relative service-three flex flex-col w-2/6 bg-white pb-4"
+      >
+        <img class="h-96" src="../assets/images/garage_3.jpg" alt="" />
+        <h3 class="mt-4 text-2xl font-bold text-center justify-center h-10">
+          Accessory Building
+        </h3>
       </div>
     </div>
   </div>
@@ -52,6 +64,7 @@
   overflow-x: hidden;
 }
 .bg-newConstruction::before {
+  background-attachment: fixed;
   content: "";
   background-image: url("../assets/images/framing-of-a-new-house.jpg");
   background-position: top center;
