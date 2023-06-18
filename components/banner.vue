@@ -1,11 +1,11 @@
 <template>
   <div class="container bg-black w-screen">
     <div
-      class="bg-homeImg bg-center bg-fixed h-screen -max overflow-hidden flex justify-start items-start"
+      class="bg-homeImg border-4 border-black bg-center bg-fixed h-screen -max overflow-hidden flex justify-start items-start"
     >
       <div class="flex flex-col  items-start text-justify">
         <h2
-          class="flex text-white text-justify justify-start items-center text-6xl font-bold relative mb-4"
+          class="mt-10 flex text-white text-justify justify-start items-center text-6xl font-bold relative mb-4"
         >
            <span class="text-[#e42b00]">WE'RE THE&nbsp;</span> EDMONTON FRAMING
         </h2>

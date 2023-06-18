@@ -1,10 +1,10 @@
 <template>
-  <div class="bg-newConstruction bg-center bg-fixed h-screen -max overflow-hidden flex justify-center items-center flex flex-col">
+  <div class="bg-newConstruction mb-20 border-4 border-black bg-center bg-fixed h-screen -max overflow-hidden justify-center items-center flex flex-col">
     <div
       class="flex-col flex justify-center align-center w-3/5"
     >
       <h3
-        class="relative text-white text-6xl text-center ml-14 mb-10 font-bold"
+        class="mt-10 relative text-white text-6xl text-center ml-14 mb-10 font-bold"
       >
       <span class="text-[#e42b00]">Our&nbsp;</span> Services
       </h3>
@@ -15,16 +15,16 @@
         reliability, durability and value for money
       </p>
     </div>
-    <div class="flex flex-row align-center justify-center ">
-      <div class="relative service-one flex flex-col w-1/5 bg-white pb-4">
+    <div class="flex flex-row align-center justify-center mb-20">
+      <div class=" border-2 border-black relative service-one flex flex-col w-1/5 bg-white pb-4">
         <img src="../assets/images/home-1.jpg" alt="">
         <h3 class="text-2xl font-bold text-center">Multi Family Residential Building</h3>
       </div>
-      <div class="relative service-two flex flex-col w-1/5 mx-8 bg-white">
+      <div class="border-2 border-black relative service-two flex flex-col w-1/5 mx-8 bg-white">
         <img src="../assets/images/home-1.jpg" alt="">
         <h3 class="mt-4 text-2xl font-bold text-center">Single Family Residential</h3>
       </div>
-      <div class="relative service-three flex flex-col w-1/5 bg-white pb-4">
+      <div class="border-2 border-black relative service-three flex flex-col w-1/5 bg-white pb-4">
         <img src="../assets/images/garage_3.jpg" alt="">
         <h3 class="mt-4 text-2xl font-bold text-center justify-center">Accessory Building</h3>
       </div>

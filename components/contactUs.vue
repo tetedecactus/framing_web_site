@@ -1,7 +1,7 @@
 <template>
   <div class="h-3/6">
     <div
-      class="bg-frey bg-center bg-fixed -max overflow-hidden flex justify-center items-center align-center"
+      class="bg-frey border-4 border-black bg-center bg-fixed -max overflow-hidden flex justify-center items-center align-center"
     >
       <div
         class="flex flex-col items-start text-justify justify-center align-center w-3/6"
