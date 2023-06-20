@@ -43,6 +43,6 @@
 <style>
     .quality {
         top: -50px;
-        right: 50%;
+        right: 57%;
     }
 </style>

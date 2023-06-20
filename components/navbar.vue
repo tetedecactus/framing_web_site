@@ -5,7 +5,7 @@
         class="container mx-auto flex flex-col text-black h-32 items-center w-auto bg-white"
       >
         <div
-          class="info flex flex-row bg-[#000] h-auto w-screen justify-between gap-10 px-32 text-white "
+          class="info flex flex-row bg-[#000] h-auto w-screen justify-between gap-10 px-32 text-white"
         >
           <p class="">1-780-271-6505</p>
           <p>
@@ -87,12 +87,10 @@
 export default {
   data() {
     return {
-      isOpen: false, 
+      isOpen: false,
     };
-  }
+  },
 };
 </script>
 
-<style>
- 
-</style>
+<style></style>

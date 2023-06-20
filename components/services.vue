@@ -50,7 +50,7 @@
   padding-right: 0rem !important;
   /* padding: 260px 0 100px 0 !important; */
   position: relative;
-  height: 100vh;
+  height: 85vh;
   width: 100%;
   display: flex;
   align-items: center;
