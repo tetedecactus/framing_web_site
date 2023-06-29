@@ -25,7 +25,7 @@
           </p>
           <div class="flex flex-row border-2 border-white text-lg py-4 px-6 rounded-none">
 
-            <img class="mr-4" src="../assets/images/icons8-phone-50.png" width="30" alt="">
+            <img class="mr-4 relative" src="../assets/images/icons8-phone-50.png" width="30" alt="">
 
             <NuxtLink to="/contact" class="btn text-white bg-transparent relative font-bold hover:text-[#e42b00] ease-in duration-200">
               Call us at 1-780-271-6505

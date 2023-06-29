@@ -7,12 +7,19 @@
         <div
           class="info flex flex-row bg-[#000] h-auto w-screen justify-between gap-10 px-32 text-white"
         >
+        <div class="phone flex flex-row">
+          <img class="mr-2" src="../assets/images/icons8-phone-50.png" width='20' alt=" phone">
           <p class="">1-780-271-6505</p>
+
+        </div>
+        <div class="flex flex-row">
+          <img class="mr-2" src="../assets/images/mail_icon.svg" width="20" alt="">
           <p>
             <a href="mailto:EastClawConstructionInc@hotmail.com">
               eastclawconstructioninc@hotmail.com
             </a>
           </p>
+        </div>
         </div>
         <div class="flex flex-row">
           <NuxtLink to="/" class="flex lg:w-1/3 items-center justify-center">
@@ -52,14 +59,14 @@
                 <li>
                   <NuxtLink
                     class="hover:border-b-2 hover:border-[#e42b00] ease-in duration-200"
-                    to="/about"
+                    to="/career"
                     >Careers</NuxtLink
                   >
                 </li>
                 <li>
                   <NuxtLink
                     class="hover:border-b-2 hover:border-[#e42b00] ease-in duration-200"
-                    to="/about"
+                    to="/contact"
                     >Contact Us</NuxtLink
                   >
                 </li>
