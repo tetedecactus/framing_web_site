@@ -26,11 +26,11 @@
         </button>
       </div>
       <div class="w-2/5 flex flex-col justify-center relative">
-        <img width="150" class="quality absolute" src="../assets/images/prenium-quality.png" alt="">
+        <!-- <img width="150" class="quality absolute" src="../assets/images/prenium-quality.png" alt=""> -->
         <img
-          class="flex border-4 border-black align-center justify-center"
+          class="flex  align-center justify-center"
           width="500"
-          src="../assets/images/home-1.jpg"
+          src="../assets/images/about_img.png"
           alt=""
         />
       </div>

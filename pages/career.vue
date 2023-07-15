@@ -1,5 +1,5 @@
 <template>
-  <div class="container mx-auto px-4 py-8 relative">
+  <div class="container mx-auto flex px-4 py-8 relative items-center">
     <div
       class="bg-planImg pr-[-4] border-4 border-black bg-center bg-fixed overflow-hidden"
     ></div>
@@ -8,31 +8,44 @@
         Join our <span class="text-[#e42b00]">TEAM</span>
       </h2>
       <div class="flex flex-row">
-        <div class="relative flex align-center w-1/3 justify-center ml-20">
-          <p class="text-white text-xl text-justify">
-            Are you seeking <span class="text-[#e42b00]">new challenges and opportunities?</span> Join our <span class="text-[#e42b00]">dynamic
-            team</span> of framers and embark on an exciting journey in the world of
-            framing.<br /><br />
+        <div class="intro relative flex items-center w-1/2 justify-start px-14 pt-20">
+          <p class="text-white text-md text-justify">
+            Are you seeking
+            <span class="text-[#e42b00] font-bold italic"
+              >new challenges and opportunities?</span
+            >
+            Join our <span class="text-[#e42b00] font-bold italic">dynamic team</span> of framers
+            and embark on an exciting journey in the world of framing.<br /><br />
             At our company, we believe in fostering a collaborative and
             growth-oriented environment where each team member can thrive. As a
             framer, you'll have the chance to work on diverse projects, from
-            <span class="text-[#e42b00]">commercial installations to residential renovations</span>. With our
-            state-of-the-art equipment and industry expertise, you'll have all
-            the resources needed to showcase your skills and craftsmanship.<br /><br />
+            <span class="text-[#e42b00] font-bold italic"
+              >commercial installations to residential renovations</span
+            >. With our state-of-the-art equipment and industry expertise,
+            you'll have all the resources needed to showcase your skills and
+            craftsmanship.<br /><br />
             We value creativity, precision, and a passion for delivering
-            exceptional results. Whether you're an <span class="text-[#e42b00]">experienced framer</span> or <span class="text-[#e42b00]">just
-            starting</span> your career in the field, we provide training and
-            mentorship to help you expand your knowledge and expertise. Join our
-            team and become part of a supportive community that values
-            innovation and craftsmanship.<br /><br />
-            If you're <span class="text-[#e42b00]">ready to take on new challenges</span>, explore your potential,
-            and join <span class="text-[#e42b00]">a team that values your contributions</span>, we invite you to
-            <span class="text-[#e42b00]">apply today</span>. Together, let's create extraordinary frames and build a
-            rewarding career in the art of framing.
+            exceptional results. Whether you're an
+            <span class="text-[#e42b00] font-bold italic">experienced framer</span> or
+            <span class="text-[#e42b00] font-bold italic">just starting</span> your career in the
+            field, we provide training and mentorship to help you expand your
+            knowledge and expertise. Join our team and become part of a
+            supportive community that values innovation and craftsmanship.<br /><br />
+            If you're
+            <span class="text-[#e42b00] font-bold italic">ready to take on new challenges</span>,
+            explore your potential, and join
+            <span class="text-[#e42b00] font-bold italic"
+              >a team that values your contributions</span
+            >, we invite you to <span class="text-[#e42b00] font-bold italic">apply today</span>.
+            Together, let's create extraordinary frames and build a rewarding
+            career in the art of framing.
           </p>
         </div>
-        <div class="w-2/3 relative justify-start align-center">
-          <form @submit.prevent="submitForm" class="max-w-xl mx-auto">
+        <div class="form w-1/2 relative justify-center items-center px-14 mt-20">
+          <form
+            @submit.prevent="submitForm"
+            class="max-w-xl mx-auto flex-col items-center"
+          >
             <div class="mb-4">
               <label
                 for="name"
@@ -77,7 +90,7 @@
                 name="message"
                 rows="4"
                 placeholder="Your Message"
-                class="w-full px-3 py-2 rounded border border-gray-300 focus:outline-none focus:border-indigo-500"
+                class="w-full h-64 px-3 py-2 rounded border border-gray-300 focus:outline-none focus:border-indigo-500"
                 required
               ></textarea>
             </div>
@@ -126,7 +139,6 @@ textarea {
 .bg-planImg {
   margin-top: 0;
   padding-right: 0rem !important;
-  /* padding: 260px 0 100px 0 !important; */
   position: relative;
   height: 85vh;
   width: 100%;
@@ -149,6 +161,15 @@ textarea {
   right: 0px;
   bottom: 0px;
   left: 0px;
-  opacity: 40%;
+  opacity: 35%;
+}
+
+.intro {
+  justify-items: center !important;
+}
+
+.form {
+  justify-items: center !important;
+  justify-content: center !important;
 }
 </style>
