@@ -1,12 +1,20 @@
 <template>
   <div class="container mx-auto px-4 py-8 relative">
-    <div class="bg-planImg pr-[-4] border-4 border-black bg-center bg-fixed overflow-hidden "></div>
+    <div
+      class="bg-planImg pr-[-4] border-4 border-black bg-center bg-fixed overflow-hidden"
+    ></div>
     <div class="absolute top-0 left-0 right-0 z-10 pt-20">
       <div class="relative justify-start items-center align-center">
-        <h2 class="relative text-6xl font-bold text-center mb-8 text-white">Contact <span class="text-[#e42b00]">Us</span></h2>
+        <h2 class="relative text-6xl font-bold text-center mb-8 text-white">
+          Contact <span class="text-[#e42b00]">Us</span>
+        </h2>
         <form @submit.prevent="submitForm" class="max-w-xl mx-auto">
           <div class="mb-4">
-            <label for="name" class="text-[#e42b00] block text-sm font-bold mb-2">Name</label>
+            <label
+              for="name"
+              class="text-[#e42b00] block text-sm font-bold mb-2"
+              >Name</label
+            >
             <input
               v-model="formData.name"
               type="text"
@@ -18,7 +26,11 @@
             />
           </div>
           <div class="mb-4 relative">
-            <label for="email" class="text-[#e42b00] block text-sm font-bold mb-2">Email</label>
+            <label
+              for="email"
+              class="text-[#e42b00] block text-sm font-bold mb-2"
+              >Email</label
+            >
             <input
               v-model="formData.email"
               type="email"
@@ -30,7 +42,11 @@
             />
           </div>
           <div class="mb-4 relative">
-            <label for="message" class="text-[#e42b00] block text-sm font-bold mb-2">Message</label>
+            <label
+              for="message"
+              class="text-[#e42b00] block text-sm font-bold mb-2"
+              >Message</label
+            >
             <textarea
               v-model="formData.message"
               id="message"
@@ -60,18 +76,18 @@ export default {
   data() {
     return {
       formData: {
-        name: '',
-        email: '',
-        message: ''
-      }
+        name: "",
+        email: "",
+        message: "",
+      },
     };
   },
   methods: {
     submitForm() {
       // Ajoutez ici la logique d'envoi du formulaire
-      console.log('Message Send', this.formData);
-    }
-  }
+      console.log("Message Send", this.formData);
+    },
+  },
 };
 </script>
 

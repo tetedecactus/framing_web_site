@@ -1,12 +1,23 @@
 <template>
   <div>
-    <div class="bg-frey border-4 border-black bg-center bg-fixed overflow-hidden flex justify-center items-center align-center">
-      <div class="flex flex-col items-start text-justify justify-center align-center w-5/6 md:w-4/6 lg:w-3/6">
-        <h2 class="text-[#e42b00] text-center justify-center items-center text-4xl md:text-5xl lg:text-6xl font-bold relative mb-8 md:mb-12">
+    <div
+      class="bg-frey border-4 border-black bg-center bg-fixed overflow-hidden flex justify-center items-center align-center"
+    >
+      <div
+        class="flex flex-col items-start text-justify justify-center align-center w-5/6 md:w-4/6 lg:w-3/6"
+      >
+        <h2
+          class="text-[#e42b00] text-center justify-center items-center text-4xl md:text-5xl lg:text-6xl font-bold relative mb-8 md:mb-12"
+        >
           <span class="text-[#fff]">Contact&nbsp;</span> Us
         </h2>
-        <p class="text-[#fff] font-bold text-base md:text-xl relative mb-6 md:mb-10 pb-2">
-          Take advantage of our hassle-free, no-obligation estimates! Just send us an email with your name, address, contact number and details of your project including any photos, drawings or plans. We'll be in touch within 24 hours.
+        <p
+          class="text-[#fff] font-bold text-base md:text-xl relative mb-6 md:mb-10 pb-2"
+        >
+          Take advantage of our hassle-free, no-obligation estimates! Just send
+          us an email with your name, address, contact number and details of
+          your project including any photos, drawings or plans. We'll be in
+          touch within 24 hours.
         </p>
         <NuxtLink
           to="/contact"

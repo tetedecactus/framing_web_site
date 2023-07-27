@@ -1,26 +1,37 @@
 <template>
   <div class="footer-div bg-black">
     <div class="container mx-auto px-4 py-8 footer-container">
-      <div class="flex">
+      <div class="sm:flex">
         <div
-          class="w-full sm:w-2/3 justify-center items-center text-justify align-center"
+          class="flex flex-col w-full sm:w-1/2 mb-14 justify-start items-center"
         >
+        
+
           <h3 class="info-footer mb-4">
             <span>East Claw Construction Inc.</span>
           </h3>
           <p class="text-[#fff] mb-4">
-            <a class="hover:text-[#e42b00] ease-in duration-200" :href="googleMapsLink">9151 Shaw Way, Edmonton, Alberta</a>
+            <a
+              class="hover:text-[#e42b00] ease-in duration-200"
+              :href="googleMapsLink"
+              >9151 Shaw Way, Edmonton, Alberta</a
+            >
           </p>
           <p class="text-[#fff] mb-4">
-            <a class="hover:text-[#e42b00] ease-in duration-200" :href="telLink">1-780-271-6505</a>
+            <a class="hover:text-[#e42b00] ease-in duration-200" :href="telLink"
+              >1-780-271-6505</a
+            >
           </p>
           <p class="text-[#fff]">
-            <a class="hover:text-[#e42b00] ease-in duration-200" href="mailto:EastClawConstructionInc@hotmail.com">
+            <a
+              class="hover:text-[#e42b00] ease-in duration-200"
+              href="mailto:EastClawConstructionInc@hotmail.com"
+            >
               eastclawconstructioninc@hotmail.com
             </a>
           </p>
         </div>
-        <div class="w-full sm:w-1/3">
+        <div class="flex flex-col items-center w-full sm:w-1/3">
           <h3 class="info-footer mb-4">
             <span>About Us</span>
           </h3>
@@ -47,15 +58,15 @@
 export default {
   computed: {
     telLink() {
-      const phoneNumber = '17802716505'; // Remplacez par votre numéro de téléphone
+      const phoneNumber = "17802716505"; // Remplacez par votre numéro de téléphone
       return `tel:${phoneNumber}`;
     },
     googleMapsLink() {
       const address = "9151 Shaw Way, Edmonton, Alberta"; // Remplacez par l'adresse de votre entreprise
       const encodedAddress = encodeURIComponent(address);
       return `https://www.google.com/maps/search/?api=1&query=${encodedAddress}`;
-    }
-  }
+    },
+  },
 };
 </script>
 

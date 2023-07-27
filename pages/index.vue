@@ -23,6 +23,6 @@ export default defineComponent({
     Services,
     ContactUs,
     WhyChooseUs,
-},
+  },
 });
 </script>

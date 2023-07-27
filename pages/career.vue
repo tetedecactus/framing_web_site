@@ -8,14 +8,18 @@
         Join our <span class="text-[#e42b00]">TEAM</span>
       </h2>
       <div class="flex flex-row">
-        <div class="intro relative flex items-center w-1/2 justify-start px-14 pt-20">
+        <div
+          class="intro relative flex items-center w-1/2 justify-start px-14 pt-20"
+        >
           <p class="text-white text-md text-justify">
             Are you seeking
             <span class="text-[#e42b00] font-bold italic"
               >new challenges and opportunities?</span
             >
-            Join our <span class="text-[#e42b00] font-bold italic">dynamic team</span> of framers
-            and embark on an exciting journey in the world of framing.<br /><br />
+            Join our
+            <span class="text-[#e42b00] font-bold italic">dynamic team</span> of
+            framers and embark on an exciting journey in the world of
+            framing.<br /><br />
             At our company, we believe in fostering a collaborative and
             growth-oriented environment where each team member can thrive. As a
             framer, you'll have the chance to work on diverse projects, from
@@ -26,22 +30,30 @@
             craftsmanship.<br /><br />
             We value creativity, precision, and a passion for delivering
             exceptional results. Whether you're an
-            <span class="text-[#e42b00] font-bold italic">experienced framer</span> or
-            <span class="text-[#e42b00] font-bold italic">just starting</span> your career in the
-            field, we provide training and mentorship to help you expand your
-            knowledge and expertise. Join our team and become part of a
-            supportive community that values innovation and craftsmanship.<br /><br />
+            <span class="text-[#e42b00] font-bold italic"
+              >experienced framer</span
+            >
+            or
+            <span class="text-[#e42b00] font-bold italic">just starting</span>
+            your career in the field, we provide training and mentorship to help
+            you expand your knowledge and expertise. Join our team and become
+            part of a supportive community that values innovation and
+            craftsmanship.<br /><br />
             If you're
-            <span class="text-[#e42b00] font-bold italic">ready to take on new challenges</span>,
-            explore your potential, and join
+            <span class="text-[#e42b00] font-bold italic"
+              >ready to take on new challenges</span
+            >, explore your potential, and join
             <span class="text-[#e42b00] font-bold italic"
               >a team that values your contributions</span
-            >, we invite you to <span class="text-[#e42b00] font-bold italic">apply today</span>.
+            >, we invite you to
+            <span class="text-[#e42b00] font-bold italic">apply today</span>.
             Together, let's create extraordinary frames and build a rewarding
             career in the art of framing.
           </p>
         </div>
-        <div class="form w-1/2 relative justify-center items-center px-14 mt-20">
+        <div
+          class="form w-1/2 relative justify-center items-center px-14 mt-20"
+        >
           <form
             @submit.prevent="submitForm"
             class="max-w-xl mx-auto flex-col items-center"
