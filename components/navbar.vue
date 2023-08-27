@@ -1,7 +1,7 @@
 <template>
   <nav class="container flex flex-col w-full bg-white">
     <div
-      class="info flex-row bg-[#000] w-auto overflow-hidden text-white"
+      class="info md:hidden md:flex flex-row justify-between bg-[#000] w-auto overflow-hidden text-white"
     >
       <div class="phone flex">
         <a :href="telLink"
@@ -209,7 +209,7 @@
             <NuxtLink
               to="/contact"
               @click="isOpen = false"
-              class="my- btn text-white border-2 border-black text-lg font-bold py-4 px-6 rounded-none bg-[#e42b00] hover:text-black ease-in duration-200"
+              class="my-btn text-white border-2 border-black text-lg font-bold py-4 px-6 rounded-none bg-[#e42b00] hover:text-black ease-in duration-200"
               >Free Quote</NuxtLink
             >
           </li>
