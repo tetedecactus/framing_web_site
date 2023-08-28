@@ -1,5 +1,5 @@
 @tailwind base;
-/* @tailwind components; */
+@tailwind components;
 
 body {
   width: 100%;
@@ -7,15 +7,32 @@ body {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
 }
 
-/* @layer components {
-    .btn {
-        @apply bg-amber-900 text-white px-3 py-2 rounded-md text-sm text-white;
-    }
+@layer components {
+  /* banner component */
+  .bg-homeImg {
+    @apply border-4 border-black bg-center bg-fixed h-screen;
+  }
+  .title-banner {
+    @apply relative w-full flex flex-col;
+    @apply 2xl:m-20 xl:m-16 lg:m-12 md:m-10 sm:m-8 m-2;
+  }
+  .title-banner h2 {
+    @apply text-white uppercase;
+    @apply 2xl:mb-20 xl:mb-16 lg:mb-12 mb-10;
+    @apply 2xl:w-2/3 xl:w-3/4;
+    @apply 2xl:text-start xl:text-start lg:text-start md:text-center sm:text-center text-center;
+    @apply 2xl:text-6xl xl:text-4xl lg:text-2xl md:text-xl sm:text-2xl text-2xl;
 
-    .banner {
-        @apply p-0;
-    }
-} */
+  }
+  .title-banner h2 span {
+     @apply text-[#e42b00] font-extrabold;
+  }
+  .title-banner p {
+    @apply text-white uppercase;
+    @apply 2xl:text-2xl xl:text-2xl text-lg;
+
+  }
+}
 
 @tailwind utilities;
 
