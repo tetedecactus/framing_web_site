@@ -52,7 +52,7 @@ body {
   }
 
   .banner h2 span {
-     @apply text-[#e42b00] font-extrabold;
+     @apply text-[#e42b00] font-black;
   }
 
   .banner p {
