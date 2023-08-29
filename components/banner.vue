@@ -45,18 +45,31 @@
         </div>
       </div>
     </div>
-  </div>
+  </div>  
 </template> -->
 <template>
   <div class="bg-black">
     <div class="bg-homeImg">
-      <div class="title-banner">
+      <div class="banner">
         <h2>
           <span>we're</span> the edmonton framing contractor
         </h2>
         <p>any projects large or small</p>
         <p>edmonton and around</p>
       </div>
+      <div
+            class="banner-btn text-lg"
+          >
+            <a :href="telLink"
+              ><img
+                src="../assets/images/icons8-phone-50.png"
+                alt=""
+            /></a>
+            <a
+              :href="telLink"
+              >Call us at 1-780-271-6505</a
+            >
+          </div>
     </div>
   </div>
 </template>
@@ -73,62 +86,13 @@ export default {
 </script>
 
 <style>
+
 .bg-homeImg {
-  margin-top: 0;
-  padding-right: 0rem !important;
-  /* padding: 260px 0 100px 0 !important; */
-  position: relative;
   height: 85vh;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #171717 !important;
-  overflow-x: hidden;
 }
 .bg-homeImg::before {
-  background-attachment: fixed;
   content: "";
   background-image: url("../assets/images/homeImg.jpg");
-  background-position: top center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  left: 0px;
-  opacity: 40%;
 }
 
-@media (max-width: 1032px) {
-  .bg-homeImg {
-    height: 70vh;
-  }
-
-  .bg-frey::before {
-    background-position: center center;
-  }
-  h2 {
-    font-size: 55px !important;
-  }
-}
-
-@media (max-width: 968px) {
-  h2 {
-    font-size: 42px !important;
-  }
-}
-
-@media (max-width: 768px) {
-  h2 {
-    font-size: 35px !important;
-  }
-}
-
-@media (max-width: 768px) {
-  h2 {
-    font-size: 35px !important;
-  }
-}
 </style>

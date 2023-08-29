@@ -1,6 +1,6 @@
 <template>
   <div class="overflow-hidden">
-    <Banner class="" />
+    <Banner />
     <About />
     <Services />
     <WhyChooseUs />

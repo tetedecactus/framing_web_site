@@ -8,35 +8,89 @@ body {
 }
 
 @layer components {
-  /* banner component */
+  /*------------- Navbar component ----------------- */
+  /* ----------------------------------------------- */
+
+  /*------------- Banner component ----------------- */
+  /* div background */
   .bg-homeImg {
-    @apply border-4 border-black bg-center bg-fixed h-screen;
+    @apply w-full flex flex-col ;
+    @apply relative items-center justify-center;
+    @apply bg-[#171717] bg-center bg-fixed border-4 border-black;
+    @apply mt-0 pr-0;
   }
-  .title-banner {
-    @apply relative w-full flex flex-col;
+
+  .bg-homeImg::before {
+    @apply bg-fixed bg-top bg-cover bg-no-repeat;
+    @apply absolute top-0 right-0 bottom-0 left-0 opacity-40;
+  }
+
+/* div banner */
+  .banner {
+    @apply relative w-2/3;
     @apply 2xl:m-20 xl:m-16 lg:m-12 md:m-10 sm:m-8 m-2;
   }
-  .title-banner h2 {
-    @apply text-white uppercase;
-    @apply 2xl:mb-20 xl:mb-16 lg:mb-12 mb-10;
-    @apply 2xl:w-2/3 xl:w-3/4;
-    @apply 2xl:text-start xl:text-start lg:text-start md:text-center sm:text-center text-center;
-    @apply 2xl:text-6xl xl:text-4xl lg:text-2xl md:text-xl sm:text-2xl text-2xl;
 
+/* h2 title */
+  .banner h2 {
+    @apply text-white uppercase text-justify;
+
+    /* Margin Bottom h2 */
+    @apply 2xl:mb-20 xl:mb-16 lg:mb-12 mb-10;
+
+    /* Width h2 */
+    @apply 2xl:w-2/3 xl:w-3/4;
+
+    /* h2 Title Position */
+    @apply text-center;
+    @apply lg:text-start;
+
+    /* Font Size h2 */
+    @apply text-4xl;
+    @apply md:text-5xl;
+    @apply lg:text-6xl;
   }
-  .title-banner h2 span {
+
+  .banner h2 span {
      @apply text-[#e42b00] font-extrabold;
   }
-  .title-banner p {
+
+  .banner p {
     @apply text-white uppercase;
-    @apply 2xl:text-2xl xl:text-2xl text-lg;
+
+    /* Font Size p */
+    @apply text-xl;
+    @apply xl:text-2xl;
 
   }
+
+  /* Button | Link */
+  .banner-btn {
+    @apply flex flex-row items-start relative;
+    @apply border-4 border-[#E42B00] rounded-none bg-black bg-opacity-40;
+    @apply p-4;
+  }
+  .banner-btn a {
+    @apply bg-transparent;
+    @apply text-white font-bold uppercase text-lg;
+    @apply hover:text-[#e42b00] hover:scale-[1.15] ease-in duration-300;
+  }
+  .banner-btn a img {
+    @apply mr-2 w-8 items-center justify-center;
+    @apply hover:scale-[1.25] ease-in duration-300;
+
+    /* display phone logo*/
+    @apply hidden;
+    @apply sm:hidden;
+    @apply lg:flex;
+  }
+  /* ----------------------------------------------- */
+  /*  */
 }
 
 @tailwind utilities;
 
 * {
-  padding: 0;
-  margin: 0;
+  /* padding: 0;
+  margin: 0; */
 }
