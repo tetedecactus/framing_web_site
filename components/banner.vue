@@ -36,10 +36,10 @@ export default {
 };
 </script>
 
-<style>
+<style lang="css">
 
 .bg-homeImg {
-  height: 85vh;
+  height: 83vh;
 }
 .bg-homeImg::before {
   content: "";

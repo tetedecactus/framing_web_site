@@ -9,8 +9,61 @@ body {
 
 @layer components {
   /*------------- Navbar component ----------------- */
+  .navbar {
+    @apply flex flex-col w-full;
+  }
+  /* Nav contact info -> Phone # & Mail @ */
+  .nav-contact-info {
+    @apply flex flex-row justify-evenly overflow-hidden;
+    @apply bg-black text-white;
+  }
+  .nav-contact-info div {
+    @apply hidden;
+    @apply sm:flex;
+  }
+  .nav-contact-info a {
+    @apply hover:text-[#e42b00] ease-in duration-300;
+  }
+  .nav-contact-info img {
+    @apply mr-4;
+  }
+  /* Main Navbar */
+  .navbar-section {
+    @apply flex items-center justify-evenly -mb-3;
+  }
+  /* Logo */
+  .navbar-section .logo img {
+    @apply h-32 w-auto;
+    @apply hover:scale-[1.15] ease-in duration-300;
+  }
+  /* Mobile hamburger Menu */
+  .mobile-nav {
+    @apply flex;
+    @apply md:hidden;
+  }
+  .mobile-nav svg {
+    @apply h-8 w-8;
+    @apply md:h-10 md:w-10;
+    @apply fill-current text-black;
+  }
+  /* Main Navbar Link & Button*/
+  .main-nav {
+    @apply hidden;
+    @apply md:block;
+  }
+  .main-nav ul {
+    @apply flex space-x-8 text-sm font-sans
+  }
+  .main-nav ul li .custom-link {
+    @apply hover:border-b-2 hover:border-[#e42b00] ease-in duration-100 pb-1;
+  }
+  .main-nav ul li .nav-btn {
+    @apply text-white text-lg font-bold;
+    @apply border-2 border-black bg-[#e42b00];
+    @apply hover:text-black ease-in duration-100;
+    @apply ml-10 py-4 px-6 rounded-none;
+  }
   /* ----------------------------------------------- */
-
   /*------------- Banner component ----------------- */
   /* div background */
   .bg-homeImg {
@@ -22,7 +75,7 @@ body {
 
   .bg-homeImg::before {
     @apply bg-fixed bg-top bg-cover bg-no-repeat;
-    @apply absolute top-0 right-0 bottom-0 left-0 opacity-40;
+    @apply absolute top-0 right-0 bottom-0 left-0 opacity-50;
   }
 
 /* div banner */

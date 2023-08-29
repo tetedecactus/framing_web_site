@@ -1,32 +1,29 @@
 <template>
-  <nav class="flex flex-col w-full bg-white">
+  <nav class="navbar">
     <div
-      class="info md:hidden md:flex flex-row justify-between bg-[#000] w-auto overflow-hidden text-white"
+      class="nav-contact-info"
     >
-      <div class="phone flex">
+      <div>
         <a :href="telLink"
           ><img
-            class="mr-2"
             src="../assets/images/icons8-phone-50.png"
             width="20"
             alt=" phone"
         /></a>
         <p>
-          <a class="hover:text-[#e42b00] ease-in duration-200" :href="telLink"
+          <a :href="telLink"
             >1-780-271-6505</a
           >
         </p>
       </div>
-      <div class="flex">
+      <div>
         <img
-          class="mr-2"
           src="../assets/images/icons8-email-50.png"
           width="20"
           alt=""
         />
         <p>
           <a
-            class="hover:text-[#e42b00] ease-in duration-200"
             href="mailto:EastClawConstructionInc@hotmail.com"
           >
             eastclawconstructioninc@hotmail.com
@@ -35,11 +32,10 @@
       </div>
     </div>
 
-    <div class="flex items-center justify-around">
+    <div class="navbar-section">
       <!-- Header logo -->
-      <NuxtLink to="/" class="flex lg:w-1/4 items-center justify-center">
+      <NuxtLink to="/" class="logo">
         <img
-          class="logo h-32 w-auto hover:scale-[1.15] ease-in duration-300"
           src="../assets/images/letter_logo.svg"
           alt="Logo"
           width="200"
@@ -47,10 +43,9 @@
       </NuxtLink>
 
       <!-- Mobile toggle -->
-      <div class="mobile-nav hidden">
+      <div class="mobile-nav">
         <button @click="drawer">
           <svg
-            class="h-8 w-8 fill-current text-black"
             fill="none"
             stroke-linecap="round"
             stroke-linejoin="round"
@@ -64,47 +59,47 @@
       </div>
 
       <!-- Navbar -->
-      <div class="main-nav hidden md:block">
-        <ul class="flex space-x-8 text-sm font-sans">
+      <div class="main-nav">
+        <ul>
           <li>
             <NuxtLink
+              class="custom-link"
               to="/about"
-              class="hover:border-b-2 hover:border-[#e42b00] ease-in duration-200"
               >About</NuxtLink
             >
           </li>
           <li>
             <NuxtLink
+              class="custom-link"
               to="/service"
-              class="hover:border-b-2 hover:border-[#e42b00] ease-in duration-200"
               >Services</NuxtLink
             >
           </li>
           <li>
             <NuxtLink
+            class="custom-link"
               to="/project"
-              class="hover:border-b-2 hover:border-[#e42b00] ease-in duration-200"
               >Our Projects</NuxtLink
             >
           </li>
           <li>
             <NuxtLink
+            class="custom-link"
               to="/career"
-              class="hover:border-b-2 hover:border-[#e42b00] ease-in duration-200"
               >Careers</NuxtLink
             >
           </li>
           <li>
             <NuxtLink
+            class="custom-link"
               to="/contact"
-              class="hover:border-b-2 hover:border-[#e42b00] ease-in duration-200"
               >Contact Us</NuxtLink
             >
           </li>
           <li>
             <NuxtLink
               to="/contact"
-              class="btn text-white border-2 border-black text-lg font-bold py-4 px-6 rounded-none bg-[#e42b00] hover:text-black ml-10 ease-in duration-200"
+              class="nav-btn"
               >Free Quote</NuxtLink
             >
           </li>
