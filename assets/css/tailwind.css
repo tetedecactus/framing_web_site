@@ -68,7 +68,8 @@ body {
   .banner-btn {
     @apply flex flex-row items-start relative;
     @apply border-4 border-[#E42B00] rounded-none bg-black bg-opacity-40;
-    @apply p-4;
+    @apply hover:bg-opacity-100 ease-in duration-300;
+    @apply px-6 py-4;
   }
   .banner-btn a {
     @apply bg-transparent;

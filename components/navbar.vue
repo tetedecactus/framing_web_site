@@ -1,5 +1,5 @@
 <template>
-  <nav class="container flex flex-col w-full bg-white">
+  <nav class="flex flex-col w-full bg-white">
     <div
       class="info md:hidden md:flex flex-row justify-between bg-[#000] w-auto overflow-hidden text-white"
     >
