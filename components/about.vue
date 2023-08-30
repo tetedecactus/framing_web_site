@@ -1,5 +1,5 @@
 <template>
-  <div class="container h-auto w-screen bg-[#fff] mb-24">
+  <div class="about-container">
     <div class="sub-container flex flex-col">
       <div class="flex flex-row align-center justify-center py-24">
         <div class="flex flex-col w-2/5 align-center justify-center">
