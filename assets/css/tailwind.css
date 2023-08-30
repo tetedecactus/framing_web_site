@@ -81,7 +81,12 @@ body {
 /* div banner */
   .banner {
     @apply relative w-2/3;
-    @apply 2xl:m-20 xl:m-16 lg:m-12 md:m-10 sm:m-8 m-2;
+    @apply m-2;
+    @apply sm:m-8;
+    @apply md:m-10;
+    @apply lg:m-12;
+    @apply xl:m-16;
+    @apply 2xl:m-20;
   }
 
 /* h2 title */
@@ -141,15 +146,62 @@ body {
   /* ----------------------------------------------- */
   /* ------------- About component ----------------- */
   .about-container {
-    @apply  w-full h-full;
+    @apply  w-full h-full flex justify-center items-center;
+    @apply mx-0;
+    @apply sm:mx-10;
+    @apply md:mx-12;
+    @apply lg:mx-16;
+    @apply xl:mx-20;
+    @apply 2xl:mx-16;
+    @apply my-10;
+    @apply sm:my-12;
+    @apply md:my-16;
+    @apply lg:my-20;
+    @apply xl:my-24;
     @apply flex-col;
-    @apply lg:flex
+    @apply md:flex-row;
   }
   .sub-container {
     @apply flex flex-col;
+    @apply justify-start;
+    @apply lg:justify-center;
+    @apply items-center;
+    @apply md:items-start;
+    @apply w-full;
+    @apply lg:w-2/5;  
+  }
+  .sub-container h4 {
+    @apply text-lg font-bold text-[#E42B00];
+    @apply mb-10;
+  }
+  .sub-container h3 {
+    @apply text-black font-bold text-justify;
+    @apply text-4xl;
+    @apply md:text-5xl;
+    @apply lg:text-6xl;
+  }
+  .sub-container p {
+    @apply text-black text-xl justify-center text-justify;
+    @apply my-10;
+    @apply w-3/4;
+  }
+  .sub-container a button {
+    @apply text-white text-lg;
+    @apply bg-[#e42b00] border-2 border-black rounded-none;
+    @apply hover:text-black ease-in duration-200;
+    @apply px-6 py-4;
+  }
+
+  /* Image container */
+  .img-container {
+    @apply hidden;
+    @apply lg:flex;
+    @apply w-2/5 justify-center;
   }
   /* ----------------------------------------------- */
+  /* ------------ Services component --------------- */
 
+  /* ----------------------------------------------- */
 }
 
 @tailwind utilities;
