@@ -141,7 +141,12 @@ body {
   /* ----------------------------------------------- */
   /* ------------- About component ----------------- */
   .about-container {
-    @apply  w-full h-screen;
+    @apply  w-full h-full;
+    @apply flex-col;
+    @apply lg:flex
+  }
+  .sub-container {
+    @apply flex flex-col;
   }
   /* ----------------------------------------------- */
 
