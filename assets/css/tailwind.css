@@ -319,6 +319,62 @@ body {
   /* ----------------------------------------------- */
   
   /* ----------- Footer component layout ----------- */
+  .footer-container {
+    @apply flex-col;
+    @apply bg-black;
+    @apply border-t-2 border-[#E42B00];
+    @apply py-4;
+    @apply sm:pt-10 sm:pb-4;
+  }
+  .footer-sub-container  {
+    @apply flex flex-col;
+    @apply sm:flex-row;
+  }
+  .footer-contact-info {
+    @apply flex flex-col;
+    @apply items-center;
+    @apply w-full;
+    @apply sm:w-1/2;
+    @apply mb-6;
+    @apply sm:mb-14;
+  }
+  .footer-contact-info h3 {
+    @apply text-[#E42B00] mb-4;
+  }
+  .footer-contact-info p {
+    @apply text-white;
+    @apply mb-2;
+    @apply sm:mb-4;
+  }
+  .footer-contact-info p a {
+    @apply hover:text-[#e42b00] ease-in duration-200;
+  }
+  .footer-about-us {
+    @apply flex flex-col;
+    @apply items-center;
+    @apply w-full;
+    @apply sm:w-1/3;
+  }
+  .footer-about-us h3 {
+    @apply text-[#E42B00];
+    @apply mb-2;
+    @apply sm:mb-4;
+  }
+  .footer-about-us p {
+    @apply text-white text-justify;
+    @apply px-4;
+  }
+  .footer-copyright {
+    @apply flex flex-col;
+    @apply text-center;
+    @apply sm:text-left;
+  }
+  .footer-copyright p {
+    @apply text-[#615E5E] text-xs text-center;
+    @apply mt-4;
+    @apply sm:mt-8;
+  }
+
   /* ----------------------------------------------- */
 
 
