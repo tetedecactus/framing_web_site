@@ -1,7 +1,7 @@
 <template>
   <section>
     <Navbar />
-    <div class="container mx-auto p-4">
+    <div>
       <slot />
     </div>
     <Footer />

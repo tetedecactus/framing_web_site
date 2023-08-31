@@ -1,5 +1,5 @@
 <template>
-  <div class="container mx-auto flex px-4 py-8 relative items-center">
+  <div class="career-container mx-auto flex px-4 py-8 relative items-center">
     <div
       class="bg-planImg pr-[-4] border-4 border-black bg-center bg-fixed overflow-hidden"
     ></div>

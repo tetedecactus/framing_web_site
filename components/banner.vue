@@ -1,6 +1,6 @@
 <template>
   <div class="bg-black">
-    <div class="bg-homeImg">
+    <div class="bg-banner">
       <div class="banner">
         <h2>
           <span>we're</span> the edmonton framing contractor
@@ -38,10 +38,10 @@ export default {
 
 <style lang="css">
 
-.bg-homeImg {
+.bg-banner {
   height: 83vh;
 }
-.bg-homeImg::before {
+.bg-banner::before {
   content: "";
   background-image: url("../assets/images/homeImg.jpg");
 }

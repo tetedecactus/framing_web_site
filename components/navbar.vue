@@ -43,7 +43,7 @@
       </NuxtLink>
 
       <!-- Mobile toggle -->
-      <div class="mobile-nav">
+      <div class="mobile-menu">
         <button @click="drawer">
           <svg
             fill="none"
@@ -130,7 +130,7 @@
 
       <!-- Drawer Menu -->
       <aside
-        class="p-5 transform top-0 left-0 w-64 bg-white fixed h-full overflow-auto ease-in-out transition-all duration-300 z-30"
+        class="mobile-nav p-5 transform top-0 left-0 w-64 bg-white fixed h-full overflow-auto ease-in-out transition-all duration-300 z-30"
         :class="isOpen ? 'translate-x-0' : '-translate-x-full'"
       >
         <div class="close">
@@ -164,7 +164,7 @@
             <NuxtLink
               to="/about"
               @click="isOpen = false"
-              class="my-4 inline-block hover:border-b-2 hover:border-[#e42b00] ease-in duration-200"
+              class="custom-mobile-link"
               >About</NuxtLink
             >
           </li>
@@ -172,7 +172,7 @@
             <NuxtLink
               to="/service"
               @click="isOpen = false"
-              class="my-4 inline-block hover:border-b-2 hover:border-[#e42b00] ease-in duration-200"
+              class="custom-mobile-link"
               >Services</NuxtLink
             >
           </li>
@@ -180,7 +180,7 @@
             <NuxtLink
               to="/project"
               @click="isOpen = false"
-              class="my-4 inline-block hover:border-b-2 hover:border-[#e42b00] ease-in duration-200"
+              class="custom-mobile-link"
               >Our Projects</NuxtLink
             >
           </li>
@@ -188,7 +188,7 @@
             <NuxtLink
               to="/career"
               @click="isOpen = false"
-              class="my-4 inline-block hover:border-b-2 hover:border-[#e42b00] ease-in duration-200"
+              class="custom-mobile-link"
               >Careers</NuxtLink
             >
           </li>
@@ -196,15 +196,15 @@
             <NuxtLink
               to="/contact"
               @click="isOpen = false"
-              class="my-4 inline-block hover:border-b-2 hover:border-[#e42b00] ease-in duration-200"
+              class="custom-mobile-link"
               >Contact Us</NuxtLink
             >
           </li>
-          <li>
+          <li class="pt-10">
             <NuxtLink
               to="/contact"
               @click="isOpen = false"
-              class="my-btn text-white border-2 border-black text-lg font-bold py-4 px-6 rounded-none bg-[#e42b00] hover:text-black ease-in duration-200"
+              class="mobile-btn"
               >Free Quote</NuxtLink
             >
           </li>

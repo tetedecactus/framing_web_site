@@ -1,12 +1,10 @@
 <template>
   <div class="footer-div bg-black">
-    <div class="container mx-auto px-4 py-8 footer-container">
+    <div class="footer-container mx-auto px-4 py-8 footer-container">
       <div class="sm:flex">
         <div
           class="flex flex-col w-full sm:w-1/2 mb-14 justify-start items-center"
         >
-        
-
           <h3 class="info-footer mb-4">
             <span>East Claw Construction Inc.</span>
           </h3>
