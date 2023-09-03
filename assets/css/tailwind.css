@@ -3,15 +3,9 @@
 
 body {
   overflow-x: hidden;
-  /* padding-left: 1rem; */
-  /* padding-right: 1rem; */
   font-family: Phudu;
 }
-/* body :not(.navbar) {
-  padding-left: 0rem;
-  padding-right: 0rem;
 
-} */
 @layer components {
   /*------------- Navbar component Layout----------------- */
   .navbar {
@@ -85,7 +79,7 @@ body {
   /*------------- Banner component ----------------- */
   /* div background */
   .bg-banner {
-    @apply w-full flex flex-col ;
+    @apply w-full flex flex-col;
     @apply relative items-center justify-center;
     @apply bg-[#171717] bg-center bg-fixed border-4 border-black;
     @apply mt-0 pr-0;
@@ -384,10 +378,61 @@ body {
   /* ----------------------------------------------- */
   /* ------------------ Page About ----------------- */
   .about-page-container {
-    @apply  w-full h-screen;
+    @apply w-screen;
+    @apply mb-32 mt-20;
+    @apply px-4;
+  }
+  .bg-pageAboutImg {
+    @apply h-[110vh];
+    @apply sm:h-[80vh];
     @apply flex flex-col;
+    @apply items-center;
+    @apply justify-center;
+    @apply bg-[#171717] bg-center bg-fixed border-4 border-black;
+    @apply relative;
+    @apply px-4;
+    @apply w-full;
+  }
+  .bg-pageAboutImg::before {
+    @apply bg-fixed bg-top bg-cover bg-no-repeat;
+    @apply absolute top-0 right-0 bottom-0 left-0 opacity-50;
+  }
+  .bg-pageAboutImg div {
+    @apply items-center;
+    @apply justify-center;
+    @apply text-justify;
+    @apply w-full;
+    @apply md:w-5/6;
+    @apply lg:w-1/2;
+  }
+  .about-page-container h2 {
+    @apply hidden;
+    @apply sm:block;
+    @apply relative text-white text-center;
+    @apply justify-start;
+    @apply mb-8;
+    @apply md:mb-12;
+    @apply text-4xl;
+    @apply md:text-5xl;
+    @apply lg:text-6xl;
+  }
+  .about-page-container h3 {
+    @apply text-[#E42B00];
+    @apply relative;
+    @apply justify-start;
+    @apply text-2xl;
+    @apply md:text-3xl;
+    @apply mb-6;
+    @apply md:mb-10;
+  }
+  .about-page-container p {
+    @apply relative;
+    @apply text-white;
+    @apply text-base;
+    @apply sm:text-lg;
   }
   /* ----------------------------------------------- */
+  
 
 
 }
