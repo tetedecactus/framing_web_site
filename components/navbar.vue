@@ -256,9 +256,10 @@ export default {
   .main-nav {
     display: none;
   }
-  .mobile-nav {
+  .mobile-menu {
     visibility: visible !important;
     display: block;
   }
+
 }
 </style>

@@ -3,11 +3,15 @@
 
 body {
   overflow-x: hidden;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  /* padding-left: 1rem; */
+  /* padding-right: 1rem; */
   font-family: Phudu;
 }
+/* body :not(.navbar) {
+  padding-left: 0rem;
+  padding-right: 0rem;
 
+} */
 @layer components {
   /*------------- Navbar component Layout----------------- */
   .navbar {
@@ -15,7 +19,9 @@ body {
   }
   /* Nav contact info -> Phone # & Mail @ */
   .nav-contact-info {
-    @apply flex flex-row justify-evenly overflow-hidden;
+    @apply w-screen;
+    @apply pr-0 pl-0;
+    @apply flex flex-row justify-evenly;
     @apply bg-black text-white;
   }
   .nav-contact-info div {
@@ -49,7 +55,7 @@ body {
   }
   /* Main Navbar Link & Button*/
   .main-nav {
-    @apply hidden;
+    /* @apply hidden; */
     @apply md:block;
   }
   .main-nav ul {
@@ -375,6 +381,12 @@ body {
     @apply sm:mt-8;
   }
 
+  /* ----------------------------------------------- */
+  /* ------------------ Page About ----------------- */
+  .about-page-container {
+    @apply  w-full h-screen;
+    @apply flex flex-col;
+  }
   /* ----------------------------------------------- */
 
 
