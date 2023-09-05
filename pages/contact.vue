@@ -1,7 +1,7 @@
 <template>
-  <div class="container mx-auto px-4 py-8 relative">
+  <div class="page-contact-container">
     <div
-      class="bg-planImg pr-[-4] border-4 border-black bg-center bg-fixed overflow-hidden"
+      class="bg-pageContactImg"
     ></div>
     <div class="absolute top-0 left-0 right-0 z-10 pt-20">
       <div class="relative justify-start items-center align-center">
@@ -98,32 +98,9 @@ textarea {
   resize: vertical;
 }
 
-.bg-planImg {
-  margin-top: 0;
-  padding-right: 0rem !important;
-  /* padding: 260px 0 100px 0 !important; */
-  position: relative;
-  height: 85vh;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #171717 !important;
-  overflow-x: hidden;
-}
 
-.bg-planImg::before {
-  background-attachment: fixed;
+.bg-pageContactImg::before {
   content: "";
   background-image: url("../assets/images/frame_plan.jpg");
-  background-position: top center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  left: 0px;
-  opacity: 40%;
 }
 </style>

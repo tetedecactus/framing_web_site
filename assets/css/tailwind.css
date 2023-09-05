@@ -56,7 +56,10 @@ body {
     @apply flex space-x-8 text-sm font-sans
   }
   .main-nav ul li .custom-link {
-    @apply hover:border-b-2 hover:border-[#e42b00] ease-in duration-100 pb-1;
+    @apply font-bold uppercase;
+    @apply text-sm;
+    @apply lg:text-base;
+    @apply hover:border-b-2 hover:border-[#e42b00] ease-in duration-100 pb-0;
   }
   .main-nav ul li .nav-btn {
     @apply text-white text-lg font-bold;
@@ -379,7 +382,7 @@ body {
   /* ------------------ Page About ----------------- */
   .about-page-container {
     @apply w-screen;
-    @apply mb-32 mt-20;
+    @apply mb-32;
     @apply px-4;
   }
   .bg-pageAboutImg {
@@ -432,8 +435,97 @@ body {
     @apply sm:text-lg;
   }
   /* ----------------------------------------------- */
-  
-
+  /* ----------------- Page Career ----------------- */
+  .career-container {
+    @apply flex;
+    @apply w-screen;
+    @apply px-4 pb-8;
+    @apply relative;
+  }
+  .bg-pageCareerImg {
+    @apply h-[110vh];
+    @apply sm:h-[85vh];
+    @apply flex flex-col;
+    @apply items-center;
+    @apply justify-center;
+    @apply bg-[#171717] bg-center bg-fixed border-4 border-black;
+    @apply relative;
+    @apply px-4;
+    @apply w-full;
+  }
+  .bg-pageCareerImg::before {
+    @apply bg-fixed bg-top bg-cover bg-no-repeat;
+    @apply absolute top-0 right-0 bottom-0 left-0 opacity-50;
+  }
+  .career-container div div h2 {
+    @apply relative text-white text-center;
+    @apply justify-start;
+    @apply mb-8;
+    @apply md:mb-12;
+    @apply text-4xl;
+    @apply md:text-5xl;
+    @apply lg:text-6xl;
+  }
+  .career-container div div h2 span {
+    @apply font-black text-[#E42B00];
+  }
+  .career-subcontainer {
+    @apply flex;
+    @apply flex-col;
+    @apply lg:flex-row;
+  }
+  .career-text-box {
+    @apply relative flex;
+    @apply items-center;
+    @apply px-4;
+    @apply mx-auto;
+    @apply sm:px-8;
+    @apply md:px-14;
+    @apply w-full;
+    @apply lg:w-1/2;
+  }
+  .career-text-box p {
+    @apply text-white text-justify;
+    @apply text-sm;
+    @apply sm:text-base;
+    @apply md:text-lg;
+  }
+  .career-text-box p span {
+    @apply text-[#E42B00] font-black italic;
+  }
+  .career-form-box {
+    @apply relative;
+    @apply items-center;
+    @apply px-4;
+    @apply sm:px-8;
+    @apply md:px-14;
+    @apply w-full;
+    @apply lg:w-1/2;
+  }
+  /* ----------------------------------------------- */
+  /* --------------- Page Contact Us --------------- */
+  .page-contact-container {
+    @apply flex;
+    @apply w-screen;
+    @apply px-4 py-8;
+    @apply relative;
+  }
+  .bg-pageContactImg {
+    @apply h-[110vh];
+    @apply sm:h-[85vh];
+    @apply flex flex-col;
+    @apply items-center;
+    @apply justify-center;
+    @apply bg-[#171717] bg-center bg-fixed border-4 border-black;
+    @apply relative;
+    @apply px-4;
+    @apply w-full;
+  }
+  .bg-pageContactImg::before {
+    @apply bg-fixed bg-top bg-cover bg-no-repeat;
+    @apply absolute top-0 right-0 bottom-0 left-0 opacity-50;
+  }
+  /* ----------------------------------------------- */
 
 }
 
