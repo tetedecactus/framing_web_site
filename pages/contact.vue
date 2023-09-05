@@ -1,9 +1,6 @@
 <template>
   <div class="page-contact-container">
-    <div
-      class="bg-pageContactImg"
-    ></div>
-    <div class="absolute top-0 left-0 right-0 z-10 pt-20">
+    <div class="bg-pageContactImg">
       <div class="relative justify-start items-center align-center">
         <h2 class="relative text-6xl font-bold text-center mb-8 text-white">
           Contact <span class="text-[#e42b00]">Us</span>
