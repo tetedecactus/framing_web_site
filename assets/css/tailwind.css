@@ -57,8 +57,8 @@ body {
   }
   .main-nav ul li .custom-link {
     @apply font-bold uppercase;
-    @apply text-sm;
-    @apply lg:text-base;
+    @apply text-xs;
+    /* @apply xl:text-base; */
     @apply hover:border-b-2 hover:border-[#e42b00] ease-in duration-100 pb-0;
   }
   .main-nav ul li .nav-btn {
@@ -524,6 +524,18 @@ body {
   .bg-pageContactImg::before {
     @apply bg-fixed bg-top bg-cover bg-no-repeat;
     @apply absolute top-0 right-0 bottom-0 left-0 opacity-50;
+  }
+  .page-contact-container div div h2 {
+    @apply relative text-white text-center;
+    @apply justify-start;
+    @apply mb-8;
+    @apply md:mb-12;
+    @apply text-4xl;
+    @apply md:text-5xl;
+    @apply lg:text-6xl;
+  }
+  .page-contact-container div div h2 span {
+    @apply font-black text-[#E42B00];
   }
   /* ----------------------------------------------- */
 

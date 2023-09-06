@@ -1,11 +1,11 @@
 <template>
   <div class="page-contact-container">
     <div class="bg-pageContactImg">
-      <div class="relative justify-start items-center align-center">
-        <h2 class="relative text-6xl font-bold text-center mb-8 text-white">
-          Contact <span class="text-[#e42b00]">Us</span>
+      <div>
+        <h2>
+          Contact <span>Us</span>
         </h2>
-        <form @submit.prevent="submitForm" class="max-w-xl mx-auto">
+        <form @submit.prevent="submitForm" class="max-w-xl mx-auto flex-col relative">
           <div class="mb-4">
             <label
               for="name"
@@ -18,7 +18,7 @@
               id="name"
               name="name"
               placeholder="Your Name"
-              class="w-full px-3 py-2 rounded border border-gray-300 focus:outline-none focus:border-indigo-500"
+              class="relative w-full px-3 py-2 rounded border border-gray-300 focus:outline-none focus:border-indigo-500"
               required
             />
           </div>
