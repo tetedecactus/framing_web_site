@@ -1,5 +1,6 @@
 @tailwind base;
 @tailwind components;
+@tailwind utilities;
 
 body {
   overflow-x: hidden;
@@ -539,11 +540,4 @@ body {
   }
   /* ----------------------------------------------- */
 
-}
-
-@tailwind utilities;
-
-* {
-  /* padding: 0;
-  margin: 0; */
 }
