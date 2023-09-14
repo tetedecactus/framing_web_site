@@ -75,13 +75,13 @@
               >Services</NuxtLink
             >
           </li>
-          <li>
+          <!-- <li>
             <NuxtLink
             class="custom-link"
               to="/project"
               >Our Projects</NuxtLink
             >
-          </li>
+          </li> -->
           <li>
             <NuxtLink
             class="custom-link"
@@ -176,14 +176,14 @@
               >Services</NuxtLink
             >
           </li>
-          <li>
+          <!-- <li>
             <NuxtLink
               to="/project"
               @click="isOpen = false"
               class="custom-mobile-link"
               >Our Projects</NuxtLink
             >
-          </li>
+          </li> -->
           <li>
             <NuxtLink
               to="/career"

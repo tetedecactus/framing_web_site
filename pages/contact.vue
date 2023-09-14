@@ -1,10 +1,10 @@
 <template>
   <div class="page-contact-container">
     <div class="bg-pageContactImg">
-      <div>
-        <h2>
-          Contact <span>Us</span>
-        </h2>
+      <h2>
+        Contact <span>Us</span>
+      </h2>
+      <div class="contact-form-box">
         <form @submit.prevent="submitForm" class="max-w-xl mx-auto flex-col relative">
           <div class="mb-4">
             <label
