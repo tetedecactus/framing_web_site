@@ -81,20 +81,18 @@ body {
   }
   /* ----------------------------------------------- */
   /*------------- Banner component ----------------- */
-  /* div background */
   .bg-banner {
-    @apply w-full flex flex-col;
-    @apply relative items-center justify-center;
+    @apply w-full;
+    @apply relative flex flex-col;
+    @apply items-center;
+    @apply justify-evenly;
+    @apply lg:justify-center;
     @apply bg-[#171717] bg-center bg-fixed border-4 border-black;
-    @apply mt-0 pr-0;
   }
-
   .bg-banner::before {
     @apply bg-fixed bg-top bg-cover bg-no-repeat;
     @apply absolute top-0 right-0 bottom-0 left-0 opacity-50;
   }
-
-/* div banner */
   .banner {
     @apply relative w-2/3;
     @apply m-2;
@@ -104,50 +102,48 @@ body {
     @apply xl:m-16;
     @apply 2xl:m-20;
   }
-
-/* h2 title */
   .banner h2 {
     @apply text-white uppercase text-justify;
+    @apply mb-10;
+    @apply lg:mb-12;
+    @apply xl:mb-16;
+    @apply 2xl:mb-20;
+    @apply w-full;
+    @apply xl:w-3/4;
+    @apply 2xl:w-2/3;
 
-    /* Margin Bottom h2 */
-    @apply 2xl:mb-20 xl:mb-16 lg:mb-12 mb-10;
-
-    /* Width h2 */
-    @apply 2xl:w-2/3 xl:w-3/4;
-
-    /* h2 Title Position */
     @apply text-center;
     @apply lg:text-start;
-
-    /* Font Size h2 */
     @apply text-4xl;
+    @apply sm:text-5xl;
     @apply md:text-5xl;
     @apply lg:text-6xl;
   }
-
   .banner h2 span {
      @apply text-[#e42b00] font-black;
   }
-
   .banner p {
     @apply text-white uppercase;
-
-    /* Font Size p */
     @apply text-xl;
     @apply xl:text-2xl;
 
   }
 
-  /* Button | Link */
   .banner-btn {
-    @apply flex flex-row items-start relative;
-    @apply border-4 border-[#E42B00] rounded-none bg-black bg-opacity-40;
+    @apply flex flex-row;
+    @apply items-start relative;
+    @apply border-2;
+    @apply sm:border-4; 
+    @apply border-[#E42B00] rounded-none bg-black bg-opacity-40;
     @apply hover:bg-opacity-100 ease-in duration-300;
-    @apply px-6 py-4;
+    @apply px-4 py-2;
+    @apply sm:px-6 sm:py-4;
   }
   .banner-btn a {
     @apply bg-transparent;
-    @apply text-white font-bold uppercase text-lg;
+    @apply text-white font-bold uppercase;
+    @apply text-base;
+    @apply sm:text-lg;
     @apply hover:text-[#e42b00] hover:scale-[1.15] ease-in duration-300;
   }
   .banner-btn a img {
