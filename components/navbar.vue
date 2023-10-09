@@ -23,11 +23,12 @@
           alt=""
         />
         <p>
-          <a
-            href="mailto:EastClawConstructionInc@hotmail.com"
-          >
-            eastclawconstructioninc@hotmail.com
+          <a href="mailto:EastClawConstructionInc@hotmail.com">
+            contact-us !
           </a>
+          <!-- <a href="mailto:EastClawConstructionInc@hotmail.com">
+            eastclawconstructioninc@hotmail.com
+          </a> -->
         </p>
       </div>
     </div>

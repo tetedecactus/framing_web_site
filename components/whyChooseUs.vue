@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col bg-white mb-20">
+  <div class="choose-us-container flex flex-col bg-white mb-20">
     <div class="align-center justify-center">
       <h3 class="text-black text-6xl text-center ml-14 mb-10 font-bold">
         Why Choose Us

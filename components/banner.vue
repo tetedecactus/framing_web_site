@@ -8,19 +8,12 @@
         <p>any projects large or small</p>
         <p>edmonton and around</p>
       </div>
-      <div
-            class="banner-btn text-lg"
-          >
-            <a :href="telLink"
-              ><img
-                src="../assets/images/icons8-phone-50.png"
-                alt=""
-            /></a>
-            <a
-              :href="telLink"
-              >Call us at 1-780-271-6505</a
-            >
-          </div>
+      <div class="banner-btn text-lg">
+          <a :href="telLink">
+            <img src="../assets/images/icons8-phone-50.png" alt=""/>
+          </a>
+          <a :href="telLink">Call us at 1-780-271-6505</a>
+      </div>
     </div>
   </div>
 </template>

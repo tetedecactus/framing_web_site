@@ -68,7 +68,6 @@ body {
     @apply hover:text-black ease-in duration-100;
     @apply ml-10 py-4 px-6 rounded-none;
   }
-  /* Mobile Link */
   .custom-mobile-link {
     @apply my-4 inline-block;
     @apply hover:border-b-2 hover:border-[#e42b00] ease-in duration-200;
@@ -131,11 +130,11 @@ body {
 
   .banner-btn {
     @apply flex flex-row;
-    @apply items-start relative;
+    @apply items-start relative justify-end;
     @apply border-2;
-    @apply sm:border-4; 
-    @apply border-[#E42B00] rounded-none bg-black bg-opacity-40;
-    @apply hover:bg-opacity-100 ease-in duration-300;
+    @apply sm:border-2;
+    @apply border-[#000] rounded-none bg-[#e42b00] text-white;
+    @apply hover:text-[#000] ease-in duration-300;
     @apply px-4 py-2;
     @apply sm:px-6 sm:py-4;
   }
@@ -144,7 +143,7 @@ body {
     @apply text-white font-bold uppercase;
     @apply text-base;
     @apply sm:text-lg;
-    @apply hover:text-[#e42b00] hover:scale-[1.15] ease-in duration-300;
+    @apply hover:text-[#000] ease-in duration-300;
   }
   .banner-btn a img {
     @apply mr-2 w-8 items-center justify-center;
