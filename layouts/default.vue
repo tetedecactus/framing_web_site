@@ -1,4 +1,10 @@
 <template>
+  <div>
+        <Head>
+            <Title>East Claw Construction Inc. - Edmonton Framing Labour </Title>
+            <Meta name="description" content="My app description"/>
+        </Head>
+    </div>
   <section>
     <Navbar />
     <div>
