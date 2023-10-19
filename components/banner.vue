@@ -2,11 +2,13 @@
   <div class="bg-black">
     <div class="bg-banner">
       <div class="banner">
-        <h2>
-          <span>we're</span> the edmonton framing contractor
-        </h2>
-        <p>any projects large or small</p>
-        <p>edmonton and around</p>
+        <div>
+          <h2>
+            <span>we are </span><br>the edmonton framing contractor
+          </h2>
+        </div>
+        <p>any projects <span>large or small</span></p>
+        <p>edmonton and <span>around</span></p>
       </div>
       <div class="banner-btn text-lg">
           <a :href="telLink">

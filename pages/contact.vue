@@ -9,7 +9,6 @@
           <div class="mb-4">
             <label
               for="name"
-              class="text-[#e42b00] block text-sm font-bold mb-2"
               >Name</label
             >
             <input
@@ -18,14 +17,12 @@
               id="name"
               name="name"
               placeholder="Your Name"
-              class="relative w-full px-3 py-2 rounded border border-gray-300 focus:outline-none focus:border-indigo-500"
               required
             />
           </div>
           <div class="mb-4 relative">
             <label
               for="email"
-              class="text-[#e42b00] block text-sm font-bold mb-2"
               >Email</label
             >
             <input
@@ -34,14 +31,12 @@
               id="email"
               name="email"
               placeholder="Your Email"
-              class="w-full px-3 py-2 rounded border border-gray-300 focus:outline-none focus:border-indigo-500"
               required
             />
           </div>
           <div class="mb-4 relative">
             <label
               for="message"
-              class="text-[#e42b00] block text-sm font-bold mb-2"
               >Message</label
             >
             <textarea
@@ -50,14 +45,13 @@
               name="message"
               rows="4"
               placeholder="Your Message"
-              class="w-full px-3 py-2 rounded border border-gray-300 focus:outline-none focus:border-indigo-500"
               required
             ></textarea>
           </div>
           <div class="text-center relative">
             <button
               type="submit"
-              class="btn text-white border-2 border-black text-lg font-bold py-2 px-4 rounded-none bg-[#e42b00] hover:text-black ml-10 ease-in duration-200"
+              class="btn text-white border-2 border-black text-lg font-bold py-2 px-4 rounded-none bg-[#e42b00] hover:text-black ease-in duration-200"
             >
               Sent
             </button>
