@@ -94,4 +94,14 @@ textarea {
   content: "";
   background-image: url("../assets/images/frame_plan.jpg");
 }
+
+::-webkit-scrollbar {
+    width: 0.1em;
+    background-color: #000;
+
+  }
+  ::-webkit-scrollbar-thumb {
+    background-color: #000000;
+
+  }
 </style>
