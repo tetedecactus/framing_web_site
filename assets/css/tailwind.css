@@ -254,7 +254,7 @@ body {
 
   }
   .service-img-div {
-    @apply justify-center;
+    @apply justify-center items-center;
     @apply mb-12;
     @apply flex;
     @apply flex-col;
@@ -263,11 +263,14 @@ body {
   .service-img-div div {
     @apply flex flex-col;
     @apply mb-6;
-    @apply w-full;
+    @apply w-5/6 h-auto;
     @apply md:w-1/3;
     @apply mx-0;
     @apply md:mx-4;
     @apply bg-white border-2 border-black relative;
+  }
+  .service-img-div img {
+    /* @apply w-3/4; */
   }
   .service-info {
     @apply font-bold text-center;
@@ -390,17 +393,17 @@ body {
   .about-page-container {
     @apply w-screen;
     @apply mb-32;
-    @apply px-4;
+    @apply px-4 ;
   }
   .bg-pageAboutImg {
-    @apply h-[110vh];
-    @apply sm:h-[80vh];
+    @apply h-full;
+    @apply md:h-screen;
     @apply flex flex-col;
     @apply items-center;
     @apply justify-center;
     @apply bg-[#171717] bg-center bg-fixed border-4 border-black;
     @apply relative;
-    @apply px-4;
+    @apply px-4 py-14;
     @apply w-full;
   }
   .bg-pageAboutImg::before {
@@ -408,6 +411,7 @@ body {
     @apply absolute top-0 right-0 bottom-0 left-0 opacity-50;
   }
   .bg-pageAboutImg div {
+    @apply flex flex-col;
     @apply items-center;
     @apply justify-center;
     @apply text-justify;
@@ -416,8 +420,7 @@ body {
     @apply lg:w-1/2;
   }
   .about-page-container h2 {
-    @apply hidden;
-    @apply sm:block;
+    @apply block;
     @apply relative text-white text-center;
     @apply justify-start;
     @apply mb-8;
@@ -440,6 +443,8 @@ body {
     @apply text-white;
     @apply text-base;
     @apply sm:text-lg;
+    @apply w-5/6;
+    @apply md:w-full;
   }
   /* ----------------------------------------------- */
   /* ----------------- Page Career ----------------- */

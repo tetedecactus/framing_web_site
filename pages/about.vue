@@ -35,4 +35,12 @@
   content: "";
   background-image: url("../assets/images/framing_guy.jpg");
 }
+::-webkit-scrollbar {
+    width: 0.1em;
+    background-color: #000;
+  }
+  ::-webkit-scrollbar-thumb {
+    background-color: #000000;
+
+  }
 </style>
