@@ -269,9 +269,8 @@ body {
     @apply md:mx-4;
     @apply bg-white border-2 border-black relative;
   }
-  .service-img-div img {
-    /* @apply w-3/4; */
-  }
+  /* .service-img-div img {
+  } */
   .service-info {
     @apply font-bold text-center;
     @apply h-10;
@@ -281,29 +280,28 @@ body {
 
   /* ------------ Contact Us component ------------- */
   .bg-contact-us {
-    @apply w-full flex flex-col overflow-hidden;
-    @apply relative items-center justify-center;
-    @apply bg-[#171717] bg-center bg-fixed border-4 border-black;
-    @apply mt-0 pr-0;
+    @apply flex flex-row-reverse  w-5/6;
+    @apply items-center;
+    @apply bg-[#fff] ;
+    /* @apply bg-[#171717] bg-center bg-fixed border-4 border-black; */
+    @apply my-24 ml-24;
     @apply mb-4;
     @apply md:mb-10;
     @apply lg:mb-20;
   }
-  .bg-contact-us::before {
-    @apply bg-fixed bg-top bg-cover bg-no-repeat;
-    @apply absolute top-0 right-0 bottom-0 left-0 opacity-50;
-  }
-  .bg-contact-us div {
+  .text-container-contactUs {
     @apply flex flex-col;
     @apply text-justify justify-center;
     @apply items-center;
-    @apply md:items-start;
-    @apply w-5/6;
+    @apply md:items-end;
+    @apply w-4/6;
     @apply md:w-2/3;
-    @apply lg:w-1/2;
+    @apply lg:w-3/4;
+    @apply px-6;
+
   }
-  .bg-contact-us div h2 {
-    @apply relative text-white text-center;
+  .text-container-contactUs h2 {
+    @apply text-black text-center;
     @apply justify-center items-center;
     @apply mb-8;
     @apply md:mb-12;
@@ -311,23 +309,32 @@ body {
     @apply md:text-5xl;
     @apply lg:text-6xl;
   }
-  .bg-contact-us div h2 span {
+  .text-container-contactUs h2 span {
     @apply text-[#E42B00] font-black;
   }
-  .bg-contact-us div p {
-    @apply relative;
-    @apply text-white font-bold;
+  .text-container-contactUs p {
+    @apply text-black font-bold;
     @apply text-lg;
     @apply md:text-xl;
     @apply mb-6;
     @apply md:mb-10;
   }
   .contact-us-btn {
-    @apply relative;
     @apply text-white text-lg;
     @apply bg-[#e42b00] border-2 border-black rounded-none;
     @apply hover:text-black ease-in duration-200;
     @apply px-6 py-4;
+  }
+  .img-container-contactUs {
+    @apply hidden;
+    @apply lg:flex;
+    @apply w-2/5 justify-center;
+  }
+  .img-container-contactUs img {
+    @apply w-full;
+    @apply h-auto;
+    @apply object-cover;
+    @apply border-4 border-black;
   }
   /* ----------------------------------------------- */
   

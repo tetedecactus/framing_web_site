@@ -2,7 +2,7 @@
     <div
       class="bg-contact-us"
     >
-      <div>
+      <div class="text-container-contactUs">
         <h2>
           <span>Contact&nbsp;</span> Us
         </h2>
@@ -18,6 +18,13 @@
           >Contact Us Now
         </NuxtLink>
       </div>
+      <div class="img-container-contactUs">
+        <img
+        width="500"
+          src="../assets/images/framing_outil.jpg"
+          alt="Frey Construction"
+        />
+      </div>
     </div>
 </template>
 
@@ -28,7 +35,7 @@
 
 .bg-contact-us::before {
   content: "";
-  background-image: url("../assets/images/frey-cropped.jpg");
+  /* background-image: url("../assets/images/frey-cropped.jpg"); */
 }
 
 /* @media (max-width: 768px) {

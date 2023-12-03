@@ -3,7 +3,7 @@
     <Banner />
     <About />
     <Services />
-    <WhyChooseUs />
+    <!-- <WhyChooseUs /> -->
     <ContactUs />
   </div>
 </template>
