@@ -1,4 +1,4 @@
-@tailwind base;
+  @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
@@ -225,8 +225,12 @@ body {
     @apply relative items-center justify-center;
     @apply bg-[#171717] bg-center bg-fixed border-4 border-black;
     @apply mt-0 pr-0;
+    @apply object-cover;
+
   }
   .bg-services::before {
+    @apply object-cover;
+
     @apply bg-fixed bg-top bg-cover bg-no-repeat;
     @apply absolute top-0 right-0 bottom-0 left-0 opacity-50;
   }
@@ -280,24 +284,30 @@ body {
 
   /* ------------ Contact Us component ------------- */
   .bg-contact-us {
-    @apply flex flex-row-reverse  w-5/6;
-    @apply items-center;
-    @apply bg-[#fff] ;
+    @apply flex flex-row-reverse;
+    @apply w-full;  
+    @apply md:w-5/6;
+    @apply items-center justify-center;
+    @apply bg-[#fff];
     /* @apply bg-[#171717] bg-center bg-fixed border-4 border-black; */
-    @apply my-24 ml-24;
-    @apply mb-4;
-    @apply md:mb-10;
-    @apply lg:mb-20;
+    @apply sm:my-16 ;
+    @apply md:my-16;
+    @apply lg:my-24;
+    @apply md:ml-24;
+    /* @apply mb-10; */
+   
   }
   .text-container-contactUs {
     @apply flex flex-col;
     @apply text-justify justify-center;
     @apply items-center;
-    @apply md:items-end;
+    @apply lg:items-end;
     @apply w-4/6;
-    @apply md:w-2/3;
-    @apply lg:w-3/4;
+    @apply mx-10;
+    @apply md:w-full;
+    @apply lg:w-2/4;
     @apply px-6;
+    @apply py-10;
 
   }
   .text-container-contactUs h2 {
@@ -331,10 +341,11 @@ body {
     @apply w-2/5 justify-center;
   }
   .img-container-contactUs img {
-    @apply w-full;
-    @apply h-auto;
+    /* @apply w-full; */
+    /* @apply h-auto; */
     @apply object-cover;
     @apply border-4 border-black;
+    @apply overflow-hidden;
   }
   /* ----------------------------------------------- */
   

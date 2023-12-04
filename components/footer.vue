@@ -8,7 +8,7 @@
           <p>
             <a
               :href="googleMapsLink"
-              >9151 Shaw Way, Edmonton, Alberta</a
+              >Edmonton, Alberta</a
             >
           </p>
           <p>
@@ -54,7 +54,7 @@ export default {
       return `tel:${phoneNumber}`;
     },
     googleMapsLink() {
-      const address = "9151 Shaw Way, Edmonton, Alberta"; // Remplacez par l'adresse de votre entreprise
+      const address = " Edmonton, Alberta"; // Remplacez par l'adresse de votre entreprise
       const encodedAddress = encodeURIComponent(address);
       return `https://www.google.com/maps/search/?api=1&query=${encodedAddress}`;
     },
