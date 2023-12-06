@@ -144,7 +144,7 @@ body {
     @apply border-[#000] rounded-none bg-[#e42b00] text-white;
     @apply hover:text-[#000] ease-in duration-300;
     @apply px-4 py-2;
-    @apply sm:px-6 sm:py-4;
+    @apply sm:px-4 sm:py-2;
   }
   .banner-btn a {
     @apply bg-transparent;
@@ -154,7 +154,7 @@ body {
     @apply hover:text-[#000] ease-in duration-300;
   }
   .banner-btn a img {
-    @apply mr-2 w-8 items-center justify-center;
+    @apply mr-2 w-6 items-center justify-center;
     @apply hover:scale-[1.25] ease-in duration-300;
 
     /* display phone logo*/
@@ -241,9 +241,9 @@ body {
     @apply sm:w-3/5;
   }
   .service-title-div h3 {
-    @apply relative text-center text-white font-bold;
+    @apply relative text-center text-white font-bold overflow-hidden h-auto;
     @apply my-10;
-    @apply text-4xl;
+    @apply text-2xl;
     @apply md:text-5xl;
     @apply lg:text-6xl;
   }
@@ -273,12 +273,20 @@ body {
     @apply md:mx-4;
     @apply bg-white border-2 border-black relative;
   }
-  /* .service-img-div img {
-  } */
+  .service-img-div img {
+    /* @apply w-full h-auto; */
+    @apply object-cover;
+    @apply overflow-hidden;
+  }
   .service-info {
     @apply font-bold text-center;
-    @apply h-10;
-    @apply text-2xl;
+    @apply h-auto;
+    @apply text-xl;
+    @apply md:text-2xl;
+    white-space: nowrap;
+  /* overflow: hidden; */
+  text-overflow: ellipsis;
+    
   }
   /* ----------------------------------------------- */
 
@@ -588,10 +596,27 @@ body {
     @apply md:text-5xl;
     @apply lg:text-6xl;
   }
-  .page-contact-container div h2 span {
+  span {
     @apply font-black text-[#E42B00];
   }
 
+  .page-contact-container .contactUs-text-box {
+    @apply relative flex;
+    @apply items-center;
+    @apply px-4 pb-6 pt-4;
+    @apply mx-auto;
+    @apply sm:px-8;
+    @apply md:px-14;
+    @apply w-full;
+    @apply lg:w-1/2;
+  }
+  .page-contact-container .contactUs-text-box p {
+    @apply text-white text-justify; 
+    @apply break-words;
+    @apply text-sm;
+    @apply sm:text-base;
+    @apply md:text-lg;
+  }
   .page-contact-container .contact-form-box{
     @apply relative;
     @apply items-center;

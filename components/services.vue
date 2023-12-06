@@ -16,7 +16,7 @@
       >
         <img class="h-96 border-black border-b-2" src="../assets/images/block.jpg" alt="" />
         <h3 class="service-info">
-          Multi Family Residential Building
+          Multi Residential Building
         </h3>
       </div>
       <div

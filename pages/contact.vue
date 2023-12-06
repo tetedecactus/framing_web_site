@@ -4,6 +4,14 @@
       <h2>
         Contact <span>Us</span>
       </h2>
+      <div class="contactUs-text-box">
+        <p>
+          Take advantage of our hassle-free, no-obligation estimates! Just send
+          us an email with your name, address, contact number and details of
+          your project including any photos, drawings or plans.<span> We'll be in
+          touch within 24 hours</span>.
+        </p>
+      </div>
       <div class="contact-form-box">
         <form @submit.prevent="submitForm" class="max-w-xl mx-auto flex-col relative">
           <div class="mb-4">

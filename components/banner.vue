@@ -7,7 +7,7 @@
             <span>we are </span><br>the edmonton framing contractor
           </h2>
         </div>
-        <p>any projects <span>large or small</span></p>
+        <p>any projects <span>large</span> or <span>small</span></p>
         <p>edmonton and <span>around</span></p>
         <button class="banner-btn text-lg mt-16">
 
