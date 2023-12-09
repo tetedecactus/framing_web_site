@@ -293,7 +293,7 @@ body {
   /* ------------ Contact Us component ------------- */
   .bg-contact-us {
     @apply flex flex-row-reverse;
-    @apply w-full ;  
+    @apply w-full h-auto;  
     @apply md:w-5/6;
     @apply items-center justify-center;
     @apply bg-[#fff];
